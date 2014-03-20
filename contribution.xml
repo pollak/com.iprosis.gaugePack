@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension xmlns="http://www.sap.com/bi/zen/sdk"
+	title="GilatGaugeZ"
+	version="1.0"
+	vendor="iProsis"
+	id="com.iprosis.gaugepack">
+	
+	<component id="gilatGaugeC" title="GilatGaugeC" icon="res/icoFree.png"	
+		handlerType="div"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html"
+		databound="true">
+		<jsInclude>res/js/jQueryRotate.min.js</jsInclude>
+		<jsInclude>res/js/jgauge-0.3.0.a3.min.js</jsInclude>
+		<jsInclude>res/js/component.js</jsInclude>
+		<cssInclude>res/css/jgauge.css</cssInclude>
+		<cssInclude>res/css/component.css</cssInclude>
+		
+		<property type="int" title="Gauge Type" id="GaugeType"></property>
+		<property type="ScriptText" title="On Click" id="onclick" group="Events" />
+		<property type="float" title="Minimum Value" id="MinValue"></property>
+		<property type="float" title="Maximum Value" id="MaxValue"></property>
+		<property type="ResultCell" title="Value" id="JValue" group="DataBinding"></property>
+		<property type="int" title="Number of Decimal Places" id="NoDec"></property>
+		<property type="int" title="Number of Ticks" id="NoTicks"></property>
+		<property type="ResultCell" title="Danger Zone" id="DZone" group="DataBinding"></property>
+		<property type="Color" title="Danger Zone Color" id="DZoneColor"></property>
+		<property type="float" title="Fixed Value" id="cellValue" visible="false"></property>
+			
+		<initialization>	
+			<defaultValue property="GaugeType">1</defaultValue>		
+			<defaultValue property="noDec">0</defaultValue>
+			<defaultValue property="MinValue">0</defaultValue>
+			<defaultValue property="MaxValue">100</defaultValue>
+			<defaultValue property="NoTicks">7</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>

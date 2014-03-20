@@ -1,0 +1,60 @@
+class com.iprosis.gauges.gilatGaugeB extends Component {
+	/* Returns the cell value */
+	float getValue() {*		
+		return this.cellValue;		
+	*}
+	
+	/* Returns the minimum scale value */
+	float getMinValue() {*
+		return this.MinValue;
+	*}
+	
+	float getMaxValue() {*
+		return this.MaxValue;
+	*}
+	
+	int getNewNoDec() {*
+		return this.NoDec;
+	*}
+	
+	int getNoTicks() {*
+		return this.NoTicks;
+	*}
+	
+	float getDangerZone() {*
+		return this.DZone;
+	*}
+	
+	String getDZoneColor() {*
+		return this.DZoneColor;
+	*}
+	
+	
+	
+	void setMinValue (float newMinValue){*
+		this.MinValue = newMinValue;
+	*}
+	
+	void setMaxValue (float newMaxValue){*
+		this.MaxValue = newMaxValue;
+	*}
+	
+	void setNoDec (int newNoDec){*
+		this.NoDec = newNoDec;
+	*}	
+		
+	void setNoTicks(int newNoTick){*
+		this.NoTicks = newNoTick;
+	*}
+	
+	void setDangerZone(float newDangerZone){*
+		this.DZone = newDangerZone;
+	*}
+
+	void setDZoneColor (/* New Color in Hex value*/ String newDangerZoneColor){*
+		this.DZoneColor = newDangerZoneColor;
+	*}
+	
+
+	
+	
